@@ -16,7 +16,11 @@ import {setSelectCategory} from '../../actions'
    }, []);
 
    const arrItems = ['Мягкие','Пластмассовые','Гипс','Меховые'];
-   const sortItems = ['популярности','цена','алфавит'];
+  //  const sortItems = [{name:'популярности', type: "popular"},
+  //                     {name:'цена', type: 'price'},
+  //                     {name:'алфавит', type: 'alfabit'}
+  //                   ];
+  const sortItems = ['популярности',"цена","алфавит"];
 
     return (
         <div className="container">

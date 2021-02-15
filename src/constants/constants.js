@@ -1,3 +1,4 @@
 export const SET_VALUE_CATEGORY='SET_VALUE_CATEGORY'
 export const SET_VALUE_SORT='SET_VALUE_SORT'
 export const SET_NAME_TOYS = 'SET_NAME_TOYS;'
+export const FETCH_YOYS = "FETCH_YOYS"
