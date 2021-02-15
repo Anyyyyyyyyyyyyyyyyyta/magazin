@@ -1,0 +1,17 @@
+import {SET_VALUE_CATEGORY, SET_VALUE_SORT} from '../constants'
+
+export const setSelectCategory = (category) => {
+    return {
+        payload: category,
+        type: SET_VALUE_CATEGORY,
+    }
+
+}
+
+export const setSelectSortBy = (filters) => {
+    return {
+        payload: filters,
+        type: SET_VALUE_SORT,
+    }
+
+}
