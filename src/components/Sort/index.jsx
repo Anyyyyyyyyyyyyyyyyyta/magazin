@@ -1,8 +1,10 @@
 import React from 'react'
 import {useState, useEffect, useRef} from 'react'
+import {setSelectSortBy} from '../../actions'
+import {useDispatch} from 'redux'
 
 export const Sort = React.memo(
-  ({items}) => {
+  ({items, onClickSort}) => {
     const [visible, setVisible] = useState(false)
     const [activeSelect, setActiveSelect] = useState(0)
 
@@ -11,11 +13,12 @@ export const Sort = React.memo(
     const toggleVisible = () => {
         setVisible(!visible)
     }
-    const activeLabel = items[activeSelect]
+    const activeLabel = items[activeSelect]   
         
     const onActive = (index) =>{
       setActiveSelect(index);
       setVisible(false);
+      onClickSort(index)
     }
 
     const handleOutClick = (e) => {

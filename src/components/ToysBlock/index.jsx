@@ -2,8 +2,7 @@ import React, {useState} from 'react'
 import className from 'classnames'
 import PropTypes from 'prop-types'
 
-export const ToysBlock = ({name, imageUrl, price, sizes}) => {
-    console.log(PropTypes)
+export const ToysBlock = ({name, imageUrl, price, sizes, isLoading}) => {
     const [activeSelect, setActiveSelect] = useState(0);
 
     const sizesToys = [sizes[0], sizes[1], sizes[2]]

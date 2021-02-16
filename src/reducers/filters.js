@@ -1,7 +1,7 @@
 import {SET_VALUE_CATEGORY, SET_VALUE_SORT} from '../constants'
 
 const initialState = {
-    sortBy: '',
+    sortBy: 0,
     category: 0,
 
 }
