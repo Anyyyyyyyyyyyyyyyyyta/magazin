@@ -11,7 +11,8 @@
       ],
       "price": 25,
       "rating": 4,
-      "category": 0
+      "category": 0,
+      "raiting": 0
     },
     {
       "id": 1,
@@ -24,7 +25,8 @@
       ],
       "price": 24,
       "rating": 6,
-      "category": 1
+      "category": 1,
+      "raiting": 2
     },
     {
       "id": 2,
@@ -37,7 +39,8 @@
       ],
       "price": 27,
       "rating": 7,
-      "category": 0
+      "category": 0,
+      "raiting": 1
     },
     {
       "id": 3,
@@ -50,7 +53,8 @@
       ],
       "price": 35,
       "rating": 2,
-      "category": 1
+      "category": 1,
+      "raiting": 3
     },
     {
       "id": 4,
@@ -63,7 +67,8 @@
       ],
       "price": 41,
       "rating": 8,
-      "category": 2
+      "category": 2,
+      "raiting": 1
     },
     {
       "id": 5,
@@ -76,7 +81,8 @@
       ],
       "price": 38,
       "rating": 2,
-      "category": 3
+      "category": 3,
+      "raiting": 1
     },
     {
       "id": 6,
@@ -89,7 +95,8 @@
       ],
       "price": 45,
       "rating": 9,
-      "category": 0
+      "category": 0,
+      "raiting": 0
     },
     {
       "id": 7,
@@ -102,7 +109,8 @@
       ],
       "price": 45,
       "rating": 10,
-      "category": 0
+      "category": 0,
+      "raiting": 3
     },
     {
       "id": 8,
@@ -115,7 +123,8 @@
       ],
       "price": 39,
       "rating": 10,
-      "category": 3
+      "category": 3,
+      "raiting": 4
     },
     {
       "id": 9,
@@ -128,7 +137,8 @@
       ],
       "price": 28,
       "rating": 7,
-      "category": 0
+      "category": 0,
+      "raiting": 5
     },
     {
       "id": 10,
@@ -141,7 +151,8 @@
       ],
       "price": 27,
       "rating": 7,
-      "category": 0
+      "category": 0,
+      "raiting": 6
     },
     {
       "id": 11,
@@ -154,7 +165,8 @@
       ],
       "price": 27,
       "rating": 7,
-      "category": 0
+      "category": 0,
+      "raiting": 1
     },
     {
       "id": 12,
@@ -167,7 +179,8 @@
       ],
       "price": 29,
       "rating": 4,
-      "category": 0
+      "category": 0,
+      "raiting": 1
     },
     {
       "id": 13,
@@ -180,7 +193,8 @@
       ],
       "price": 29,
       "rating": 4,
-      "category": 1
+      "category": 1,
+      "raiting": 7
     }
   ]
 }

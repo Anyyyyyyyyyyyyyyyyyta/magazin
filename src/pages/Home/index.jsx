@@ -1,7 +1,7 @@
 import React from 'react'
 import { Categories, Sort, ToysBlock } from '../../components'
 import {useSelector, useDispatch} from 'react-redux'
-import {setSelectCategory, setSelectSortBy} from '../../actions'
+import {setSelectCategory, setSortBy} from '../../actions'
 import ContentLoader from "react-content-loader"
 import {setNameToys, fetchToys} from '../../actions'
 import {useEffect} from 'react'
@@ -28,8 +28,8 @@ import {useEffect} from 'react'
     dispatch(fetchToys(sortBy,category)) 
   }, [sortBy, category])
   
-   const onClickSortF = React.useCallback((index) => {
-    dispatch(setSelectSortBy(index))
+   const onClickSortF = React.useCallback((type) => {
+    dispatch(setSortBy(type))
    }, []);
    const onSelectCategoryF = React.useCallback((index) => {
     dispatch0(setSelectCategory(index))
@@ -37,11 +37,11 @@ import {useEffect} from 'react'
 
 
    const arrItems = ['Мягкие','Пластмассовые','Гипс','Меховые'];
-  //  const sortItems = [{name:'популярности', type: "popular"},
-  //                     {name:'цена', type: 'price'},
-  //                     {name:'алфавит', type: 'alfabit'}
+  //  const sortItems = [{name:'популярности', type: "popular", order="desc"},
+  //                     {name:'цена', type: 'price', order="desc"},
+  //                     {name:'алфавит', type: 'name', order="asc"}
   //                   ];
-  const sortItems = ['популярности',"цена","алфавит"];
+  const sortItems = ['популярности',"цене","названию"];
 
     return (
         <div className="container">

@@ -14,9 +14,9 @@ export const setSelectSortBy = (filters) => {
     }
 }
 
-export const setSortBy = (payload) => {
+export const setSortBy = ({order, type}) => {
     return{
         type: SET_SORT_BY,
-        payload: payload
+        payload: {order, type}
     }
 }
