@@ -2,14 +2,15 @@ import {SET_VALUE_CATEGORY, SET_VALUE_SORT, SET_SORT_BY} from '../constants'
 
 const initialState = {
     sortBy: {
-        type: 'popular',
-        order: 'desc'
+        order: 'desc',
+        type: 'popular'
     },
     category: null,
 
 }
 
 export const filterReducer = (state = initialState, action) => {
+    
     switch (action.type) {
         case SET_VALUE_CATEGORY: {
             return {

@@ -1,20 +1,26 @@
-import React, {ContentLoader} from 'react'
+import React from 'react'
+import ContentLoader from 'react-content-loader';
 
- const LoadingBlock = ({}) => {
+
+export const Loading = () => {
     return (
-        <ContentLoader 
-          speed={2}
-          width={280}
-          height={424}
-          viewBox="0 0 280 424"
-          backgroundColor="#f3f3f3"
-          foregroundColor="#ecebeb"
-      
-        >
-          <rect x="2" y="-1" rx="0" ry="0" width="201" height="201" />
-        </ContentLoader>
-        );
+        <div>
+            <ContentLoader 
+                className='toys-block'
+                speed={2}
+                width={280}
+                height={460}
+                viewBox="0 0 280 460"
+                backgroundColor="#f3f3f3"
+                foregroundColor="#ecebeb">
+                <circle cx="132" cy="142" r="115" />
+                <rect x="0" y="273" rx="6" ry="6" width="280" height="26" />
+                <rect x="0" y="310" rx="6" ry="6" width="280" height="84" />
+                <rect x="0" y="418" rx="6" ry="6" width="91" height="31" />
+                <rect x="137" y="408" rx="25" ry="25" width="140" height="46" />
+            </ContentLoader>
+        </div>
+    );
 }
 
-export default LoadingBlock
 

@@ -6,14 +6,18 @@ import PropTypes, { func } from 'prop-types'
 
 export const Sort = React.memo(
   ({items, onClickSort, activeSortType}) => {
+    console.log('items',items)
     const [visible, setVisible] = useState(false)
     const refSort = useRef(null)
     const toggleVisible = () => {
         setVisible(!visible)
     }
-    const onActive = (index) =>{
+    const activeLabel = items.find((obj) => obj.type === activeSortType).name;
+    const onActive = (obj) =>{
+      if (onClickSort) {
+        onClickSort(obj);
+      }
       setVisible(false);
-      onClickSort(index)
     }
     const handleOutClick = (e) => {
         if(e.path.includes(refSort.current)){
@@ -43,15 +47,15 @@ export const Sort = React.memo(
                   />
                 </svg>
                 <b>Сортировка по:</b>
-                <span onClick={toggleVisible}>{items[activeSortType]}</span>
+                <span onClick={toggleVisible}>{activeLabel}</span>
               </div>
               {visible && <div className="sort__popup">
                 <ul>
-                    {items?.map((item, index) => 
-                            <li className={activeSortType === index?'active':''}
-                                onClick={()=>onActive(index)}
+                    {items?.map((obj, index) => 
+                            <li className={activeSortType === obj.type?'active':''}
+                                onClick={()=>onActive(obj)}
                                 key={`${index}`}>
-                                  {item}
+                                  {obj.name}
                             </li>
                         )
                     }

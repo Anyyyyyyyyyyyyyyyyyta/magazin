@@ -5,7 +5,7 @@ import {setSelectCategory, setSortBy} from '../../actions'
 import ContentLoader from "react-content-loader"
 import {setNameToys, fetchToys} from '../../actions'
 import {useEffect} from 'react'
-// import LoadingBlock from '../../components/ToysBlock/LoadingBlock'
+ import {Loading} from '../../components'
 
  export const Home = () => {
   const dispatch = useDispatch();
@@ -22,8 +22,6 @@ import {useEffect} from 'react'
     }
    })
    const {sortBy, category} = useSelector(({filter}) => filter)
-   console.log('sort',sortBy)
-
   useEffect(() => {
     dispatch(fetchToys(sortBy,category)) 
   }, [sortBy, category])
@@ -37,11 +35,12 @@ import {useEffect} from 'react'
 
 
    const arrItems = ['Мягкие','Пластмассовые','Гипс','Меховые'];
-  //  const sortItems = [{name:'популярности', type: "popular", order="desc"},
-  //                     {name:'цена', type: 'price', order="desc"},
-  //                     {name:'алфавит', type: 'name', order="asc"}
-  //                   ];
-  const sortItems = ['популярности',"цене","названию"];
+   const sortItems = [
+                      {name:'популярности', type: "popular", order: "desc"},
+                      {name:'цена', type: 'price', order: "desc"},
+                      {name:'алфавит', type: 'name', order: "asc"}
+                    ];
+ // const sortItems = ['популярности',"цене","названию"];
 
     return (
         <div className="container">
@@ -50,17 +49,17 @@ import {useEffect} from 'react'
                         items={arrItems}
                         activeCategory={category}/>
             <Sort items={sortItems}
-                   activeSortType={sortBy}
+                   activeSortType={sortBy.type}
                    onClickSort={onClickSortF}/>
           </div>
           <h2 className="content__title">Все игрушки</h2>
           <div className="content__items">
-           {isLoading &&
+           {isLoading ?
              items?.map(obj => 
-              <ToysBlock key={obj.id} {...obj} isLoading={true}/>)
-              
-           }
-           {/* {Array(10).fill(<LoadingBlock />)} */}
+              <ToysBlock key={obj.id} {...obj} isLoading={true}/>):
+               Array(13).fill(<Loading />)
+            }
+           
           </div>
         </div>
     )
