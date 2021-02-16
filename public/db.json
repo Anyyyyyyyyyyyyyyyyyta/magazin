@@ -4,114 +4,183 @@
       "id": 0,
       "imageUrl": "https://www.ikea.com/ru/ru/images/products/jaettestor-yettestor-myagkaya-igrushka-slon-seryy__0710185_PE727388_S5.JPG?f=s",
       "name": "Слон",
-      "sizes": [50 , 100, 150],
+      "sizes": [
+        50,
+        100,
+        150
+      ],
       "price": 25,
-      "rating": 4
+      "rating": 4,
+      "category": 0
     },
     {
       "id": 1,
       "imageUrl": "https://www.funtastik.by/upload/iblock/4d0/4d08fe347a58d89c27e0625db98593d0.jpg",
       "name": "Конструктор",
-      "sizes": [50, 70, 100],
+      "sizes": [
+        50,
+        70,
+        100
+      ],
       "price": 24,
-      "rating": 6
+      "rating": 6,
+      "category": 1
     },
     {
       "id": 2,
       "imageUrl": "https://img.globalrustrade.com/i/9/92dpuj61hj/600-600.jpg",
       "name": "Сплюшки",
-      "sizes": [30, 60, 90],
+      "sizes": [
+        30,
+        60,
+        90
+      ],
       "price": 27,
-      "rating": 7
+      "rating": 7,
+      "category": 0
     },
     {
       "id": 3,
       "imageUrl": "https://images.by.prom.st/142234524_mashinka-metallicheskaya-mersedes.jpg",
       "name": "Машина",
-      "sizes": [26, 30, 40],
+      "sizes": [
+        26,
+        30,
+        40
+      ],
       "price": 35,
-      "rating": 2
+      "rating": 2,
+      "category": 1
     },
     {
       "id": 4,
       "imageUrl": "https://igryshki.by/uploads/product/33000/33043/thumbs/70_FN-707127_2020-01-10_15-30-03.jpg",
       "name": "Картина из гипса",
-      "sizes": [20, 30, 40],
+      "sizes": [
+        20,
+        30,
+        40
+      ],
       "price": 41,
-      "rating": 8
+      "rating": 8,
+      "category": 2
     },
     {
       "id": 5,
       "imageUrl": "https://www.ikea.com/ru/ru/images/products/vandring-hare-vandring-heyr-myagkaya-igrushka__0710176_PE727379_S5.JPG?f=s",
       "name": "Заяц",
-      "sizes": [30, 40, 50],
+      "sizes": [
+        30,
+        40,
+        50
+      ],
       "price": 38,
-      "rating": 2
+      "rating": 2,
+      "category": 3
     },
     {
       "id": 6,
       "imageUrl": "https://minsktoys.by/upload/resize_cache/iblock/d91/400_400_140cd750bba9870f18aada2478b24840a/d919dc5c1bcb143f9afdb80f5e187618.jpg",
       "name": "Акула",
-      "sizes": [40, 100, 150],
+      "sizes": [
+        40,
+        100,
+        150
+      ],
       "price": 45,
-      "rating": 9
+      "rating": 9,
+      "category": 0
     },
     {
       "id": 7,
       "imageUrl": "https://www.ikea.com/ru/ru/images/products/kramig-myagkaya-igrushka-belyy-chernyy__0162448_PE317642_S5.JPG?f=xxs",
       "name": "Панда",
-      "sizes": [40, 80, 100],
+      "sizes": [
+        40,
+        80,
+        100
+      ],
       "price": 45,
-      "rating": 10
+      "rating": 10,
+      "category": 0
     },
     {
       "id": 8,
       "imageUrl": "https://www.ikea.com/ru/ru/images/products/jaettelik-yettelik-myagkaya-igrushka-dinozavr-stegozavr__0804795_PE769336_S5.JPG?f=xxs",
       "name": "Динозавр",
-      "sizes": [30, 60, 90],
+      "sizes": [
+        30,
+        60,
+        90
+      ],
       "price": 39,
-      "category": 5,
-      "rating": 10
+      "rating": 10,
+      "category": 3
     },
     {
       "id": 9,
       "imageUrl": "https://aikea.by/u/2015/10/myagkaya-igrushka-stryova-402-604-54-1.jpg",
       "name": "Лось",
-      "sizes": [30, 60, 90],
+      "sizes": [
+        30,
+        60,
+        90
+      ],
       "price": 28,
-      "rating": 7
+      "rating": 7,
+      "category": 0
     },
     {
       "id": 10,
       "imageUrl": "https://www.ikea.com/ru/ru/images/products/djungelskog-dyungelskog-myagkaya-igrushka-lvenok__0560458_PE662342_S5.JPG?f=s",
       "name": "Лев",
-      "sizes": [30, 60, 90],
+      "sizes": [
+        30,
+        60,
+        90
+      ],
       "price": 27,
-      "rating": 7
+      "rating": 7,
+      "category": 0
     },
     {
       "id": 11,
       "imageUrl": "https://www.ikea.com/ru/ru/images/products/kelgris-myagkaya-igrushka-porosenok-razlichnye-modeli__0714445_PE730094_S5.JPG?f=s",
       "name": "Поросенок",
-      "sizes": [30, 60, 90],
+      "sizes": [
+        30,
+        60,
+        90
+      ],
       "price": 27,
-      "rating": 7
+      "rating": 7,
+      "category": 0
     },
     {
       "id": 12,
       "imageUrl": "https://images.ua.prom.st/842371888_w640_h640_myagkaya-igrushka-zhdun.jpg",
       "name": "Ждун",
-      "sizes": [50, 100, 150],
+      "sizes": [
+        50,
+        100,
+        150
+      ],
       "price": 29,
-      "rating": 4 
+      "rating": 4,
+      "category": 0
     },
     {
       "id": 13,
       "imageUrl": "https://images.by.prom.st/99773755_w640_h640_konstruktor-decool-821.jpg",
       "name": "Лего",
-      "sizes": [50, 100, 150],
+      "sizes": [
+        50,
+        100,
+        150
+      ],
       "price": 29,
-      "rating": 4 
+      "rating": 4,
+      "category": 1
     }
   ]
 }

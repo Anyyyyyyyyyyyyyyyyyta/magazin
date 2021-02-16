@@ -1,26 +1,20 @@
 import React from 'react'
 import {useState, useEffect, useRef} from 'react'
-import {setSelectSortBy} from '../../actions'
+import {setSelectSortBy, setSortBy} from '../../actions'
 import {useDispatch} from 'redux'
+import PropTypes, { func } from 'prop-types'
 
 export const Sort = React.memo(
-  ({items, onClickSort}) => {
+  ({items, onClickSort, activeSortType}) => {
     const [visible, setVisible] = useState(false)
-    const [activeSelect, setActiveSelect] = useState(0)
-
     const refSort = useRef(null)
-
     const toggleVisible = () => {
         setVisible(!visible)
     }
-    const activeLabel = items[activeSelect]   
-        
     const onActive = (index) =>{
-      setActiveSelect(index);
       setVisible(false);
       onClickSort(index)
     }
-
     const handleOutClick = (e) => {
         if(e.path.includes(refSort.current)){
             setVisible(true)
@@ -31,6 +25,7 @@ export const Sort = React.memo(
         document.body.addEventListener('click', handleOutClick)
     }, [])
 
+    //const activeLabel = items[activeSortType]
 
     return(
         <div ref={refSort} className="sort">
@@ -48,14 +43,15 @@ export const Sort = React.memo(
                   />
                 </svg>
                 <b>Сортировка по:</b>
-                <span onClick={toggleVisible}>{activeLabel}</span>
+                <span onClick={toggleVisible}>{items[activeSortType]}</span>
               </div>
               {visible && <div className="sort__popup">
                 <ul>
                     {items?.map((item, index) => 
-                            <li className={activeSelect === index?'active':''}
+                            <li className={activeSortType === index?'active':''}
                                 onClick={()=>onActive(index)}
-                                key={`${item}`}>{item}
+                                key={`${index}`}>
+                                  {item}
                             </li>
                         )
                     }
@@ -65,3 +61,16 @@ export const Sort = React.memo(
     )
 }
 )
+
+Sort.propTypes = {
+  activeSortType: PropTypes.func.isRequired, 
+  items: PropTypes.array.isRequired, 
+  onClickSort: PropTypes.func,
+
+};
+
+Sort.defaultProps = {
+  items: [],
+  onClickSort: func,
+  activeSortType: func,
+};

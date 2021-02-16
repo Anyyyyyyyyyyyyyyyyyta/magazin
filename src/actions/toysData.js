@@ -1,9 +1,15 @@
 import axios from 'axios'
-import {SET_NAME_TOYS} from '../constants'
-import {useDispatch} from 'react-redux'
+import {SET_NAME_TOYS, LOADING} from '../constants'
 
-export const fetchToys = () => (dispatch) => {
-    axios.get('http://localhost:3333/toys').then(({data}) => {
+export const loadingData = (payload) => {
+    return{
+        type: LOADING,
+        payload: payload
+    }
+}
+
+export const fetchToys = (sortBy,category) => (dispatch) => {
+    axios.get(`http://localhost:3333/toys?category=${category}&_sort=${sortBy}&_order=desc`).then(({data}) => {
       dispatch(setNameToys(data))
     })
 }

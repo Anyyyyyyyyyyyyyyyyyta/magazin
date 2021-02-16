@@ -6,8 +6,6 @@ const initialState = {
 }
 
 export const toysData = (state = initialState, action) => {
-    console.log(state)
-
     switch (action.type) {
         case SET_NAME_TOYS: {
             return {

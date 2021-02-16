@@ -57,8 +57,8 @@ export const ToysBlock = ({name, imageUrl, price, sizes, isLoading}) => {
     );
 }
 ToysBlock.propTypes = {
-    name: PropTypes.string.isRequired,
+    name: PropTypes.string,
     price: PropTypes.number,
-    sizes: PropTypes.arrayOf(PropTypes.number).isRequired,
+    sizes: PropTypes.arrayOf(PropTypes.string),
     imageUrl: PropTypes.string,
 }
