@@ -6,7 +6,6 @@ import PropTypes, { func } from 'prop-types'
 
 export const Sort = React.memo(
   ({items, onClickSort, activeSortType}) => {
-    console.log('items',items)
     const [visible, setVisible] = useState(false)
     const refSort = useRef(null)
     const toggleVisible = () => {
@@ -46,7 +45,7 @@ export const Sort = React.memo(
                     fill="#2C2C2C"
                   />
                 </svg>
-                <b>Сортировка по:</b>
+                <b className="">Сортировка по:</b>
                 <span onClick={toggleVisible}>{activeLabel}</span>
               </div>
               {visible && <div className="sort__popup">
@@ -66,15 +65,15 @@ export const Sort = React.memo(
 }
 )
 
-Sort.propTypes = {
-  activeSortType: PropTypes.func.isRequired, 
-  items: PropTypes.array.isRequired, 
-  onClickSort: PropTypes.func,
+// Sort.propTypes = {
+//   activeSortType: PropTypes.func.isRequired, 
+//   items: PropTypes.array.isRequired, 
+//   onClickSort: PropTypes.func,
 
-};
+// };
 
-Sort.defaultProps = {
-  items: [],
-  onClickSort: func,
-  activeSortType: func,
-};
+// Sort.defaultProps = {
+//   items: [],
+//   onClickSort: func,
+//   activeSortType: func,
+// };

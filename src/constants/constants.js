@@ -4,3 +4,7 @@ export const SET_NAME_TOYS = 'SET_NAME_TOYS;'
 export const FETCH_YOYS = "FETCH_YOYS"
 export const SET_SORT_BY="SET_SORT_BY"
 export const LOADING = 'LOADING'
+export const SET_TOTAL_PRICE = 'SET_TOTAL_PRICE'
+export const SET_ITEMS_COUNT='SET_ITEMS_COUNT'
+export const SET_ADD_TOYS_ITEMS='SET_ADD_TOYS_ITEMS'
+export const SET_ITEMS='SET_ITEMS'

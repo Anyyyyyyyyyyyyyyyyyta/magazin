@@ -11,12 +11,9 @@ export const toysData = (state = initialState, action) => {
             return {
                 ...state, items: action.payload, isLoading: true
             }
-        }
-        
+        }  
         default: {
             return state
         }
-
     }
-
 }

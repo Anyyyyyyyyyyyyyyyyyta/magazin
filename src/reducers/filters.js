@@ -9,7 +9,7 @@ const initialState = {
 
 }
 
-export const filterReducer = (state = initialState, action) => {
+export const filter = (state = initialState, action) => {
     
     switch (action.type) {
         case SET_VALUE_CATEGORY: {

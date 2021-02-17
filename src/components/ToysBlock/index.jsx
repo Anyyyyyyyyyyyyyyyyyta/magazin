@@ -1,14 +1,27 @@
 import React, {useState} from 'react'
 import className from 'classnames'
 import PropTypes from 'prop-types'
+import { Button } from '../Button/index';
 
-export const ToysBlock = ({name, imageUrl, price, sizes, isLoading}) => {
+export const ToysBlock = ({id, name, imageUrl, price, sizes, onClickAddToys, addOneToys}) => {
+
     const [activeSelect, setActiveSelect] = useState(0);
 
     const sizesToys = [sizes[0], sizes[1], sizes[2]]
 
     const onActive= (index) => {
         setActiveSelect(index)
+    }
+
+    const onClickAddPizza = () => {
+      const obj = {
+        id,
+        name,
+        imageUrl,
+        size: sizes[activeSelect],
+        price
+      }
+      onClickAddToys(obj)
     }
 
     return(
@@ -22,21 +35,21 @@ export const ToysBlock = ({name, imageUrl, price, sizes, isLoading}) => {
               <div className="toy-block__selector">
                 <ul>
                     {
-                        sizesToys?.map((size, index) => (
-                            <li key={`${index}`} className={ className({
-                                active: activeSelect === index,
-                                disabled: !sizesToys.includes(size),
-                               
-                                
-                            })} 
-                                onClick={()=>onActive(index)}>{size}</li>
-                        ))
+                      sizesToys?.map((size, index) => (
+                          <li key={`${index}`} className={ className({
+                              active: activeSelect === index,
+                              disabled: !sizesToys.includes(size),
+                              
+                              
+                          })} 
+                              onClick={()=>onActive(index)}>{size}</li>
+                      ))
                     }
                 </ul>
               </div>
               <div className="toy-block__bottom">
                 <div className="toy-block__price">от {price} BYN</div>
-                <div className="button button--outline button--add">
+                <div onClick={onClickAddPizza} className="button button--add button--outline" >         
                   <svg
                     width="12"
                     height="12"
@@ -50,15 +63,16 @@ export const ToysBlock = ({name, imageUrl, price, sizes, isLoading}) => {
                     />
                   </svg>
                   <span>Добавить</span>
-                  <i>2</i>
+                  {addOneToys &&<i>{addOneToys}</i>}
                 </div>
               </div>
             </div> 
     );
 }
-ToysBlock.propTypes = {
-    name: PropTypes.string,
-    price: PropTypes.number,
-    sizes: PropTypes.arrayOf(PropTypes.string),
-    imageUrl: PropTypes.string,
-}
+// ToysBlock.propTypes = {
+//     name: PropTypes.string,
+//     price: PropTypes.number,
+//     sizes: PropTypes.arrayOf(PropTypes.string),
+//     imageUrl: PropTypes.string,
+//     onClickAddToys: PropTypes.func
+// }

@@ -1,9 +1,10 @@
-import {toysData, filterReducer} from '../reducers'
+import {toysData, filter} from '../reducers'
+import busket from './busket'
 import {combineReducers} from 'redux'
 
 export const rootReducer = combineReducers({
-    toysData: toysData,
-    filter: filterReducer
-
+    toysData,
+    filter,
+    busket
 });
 

@@ -27,17 +27,17 @@ export const Categories = React.memo(({activeCategory, items, onClickItem}) => {
     )
 })
 
-Categories.propTypes = {
-    activeCategory: PropTypes.number.isRequired, 
-    items: PropTypes.arrayOf(PropTypes.object).isRequired, 
-    onClickItem: PropTypes.func,
+// Categories.propTypes = {
+//     activeCategory: PropTypes.number, 
+//     items: PropTypes.arrayOf(PropTypes.object), 
+//     onClickItem: PropTypes.func,
 
-  };
+//   };
   
-  Categories.defaultProps = {
-    activeCategory: 0,
-    items: [],
-  };
+//   Categories.defaultProps = {
+//     activeCategory: 0,
+//     items: [],
+//   };
 
 
 // export class Categories extends React.Component{
