@@ -11,8 +11,7 @@
       ],
       "price": 25,
       "rating": 4,
-      "category": 0,
-      "raiting": 0
+      "category": 0
     },
     {
       "id": 1,
@@ -25,8 +24,7 @@
       ],
       "price": 24,
       "rating": 6,
-      "category": 1,
-      "raiting": 2
+      "category": 1
     },
     {
       "id": 2,
@@ -39,9 +37,8 @@
       ],
       "price": 27,
       "rating": 7,
-      "category": 0,
-      "raiting": 1
-    },
+      "category": 0
+      },
     {
       "id": 3,
       "imageUrl": "https://images.by.prom.st/142234524_mashinka-metallicheskaya-mersedes.jpg",
@@ -53,8 +50,7 @@
       ],
       "price": 35,
       "rating": 2,
-      "category": 1,
-      "raiting": 3
+      "category": 1
     },
     {
       "id": 4,
@@ -67,8 +63,7 @@
       ],
       "price": 41,
       "rating": 8,
-      "category": 2,
-      "raiting": 1
+      "category": 2
     },
     {
       "id": 5,
@@ -81,8 +76,7 @@
       ],
       "price": 38,
       "rating": 2,
-      "category": 3,
-      "raiting": 1
+      "category": 3
     },
     {
       "id": 6,
@@ -95,8 +89,7 @@
       ],
       "price": 45,
       "rating": 9,
-      "category": 0,
-      "raiting": 0
+      "category": 0
     },
     {
       "id": 7,
@@ -109,8 +102,7 @@
       ],
       "price": 45,
       "rating": 10,
-      "category": 0,
-      "raiting": 3
+      "category": 0
     },
     {
       "id": 8,
@@ -123,8 +115,7 @@
       ],
       "price": 39,
       "rating": 10,
-      "category": 3,
-      "raiting": 4
+      "category": 3
     },
     {
       "id": 9,
@@ -137,8 +128,7 @@
       ],
       "price": 28,
       "rating": 7,
-      "category": 0,
-      "raiting": 5
+      "category": 0
     },
     {
       "id": 10,
@@ -151,8 +141,7 @@
       ],
       "price": 27,
       "rating": 7,
-      "category": 0,
-      "raiting": 6
+      "category": 0
     },
     {
       "id": 11,
@@ -165,8 +154,7 @@
       ],
       "price": 27,
       "rating": 7,
-      "category": 0,
-      "raiting": 1
+      "category": 0
     },
     {
       "id": 12,
@@ -179,8 +167,7 @@
       ],
       "price": 29,
       "rating": 4,
-      "category": 0,
-      "raiting": 1
+      "category": 0
     },
     {
       "id": 13,
@@ -193,8 +180,7 @@
       ],
       "price": 29,
       "rating": 4,
-      "category": 1,
-      "raiting": 7
+      "category": 1
     },
     {
       "id": 14,
@@ -207,8 +193,7 @@
       ],
       "price": 24,
       "rating": 0,
-      "category": 0,
-      "raiting": 7
+      "category": 0
     },
     {
       "id": 15,
@@ -221,8 +206,7 @@
       ],
       "price": 24,
       "rating": 0,
-      "category": 0,
-      "raiting": 3
+      "category": 0
     }
     
   ]
