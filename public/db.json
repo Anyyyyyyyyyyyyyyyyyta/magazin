@@ -195,6 +195,35 @@
       "rating": 4,
       "category": 1,
       "raiting": 7
+    },
+    {
+      "id": 14,
+      "imageUrl": "https://m.ideipodarkov.net/reimg/data/gifts/49/715x520/1556749-6113.jpg",
+      "name": "Мастер Йода",
+      "sizes": [
+        50,
+        100,
+        150
+      ],
+      "price": 24,
+      "rating": 0,
+      "category": 0,
+      "raiting": 7
+    },
+    {
+      "id": 15,
+      "imageUrl": "https://cheapstore.su/image/cache/data/akustika/3/MF-600%20Dapper%20Frogs3-600x600.jpg",
+      "name": "Лягушка",
+      "sizes": [
+        50,
+        100,
+        150
+      ],
+      "price": 24,
+      "rating": 0,
+      "category": 0,
+      "raiting": 3
     }
+    
   ]
 }

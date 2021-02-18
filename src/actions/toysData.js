@@ -9,7 +9,7 @@ export const loadingData = (payload) => {
 }
 
 export const fetchToys = (sortBy,category) => (dispatch) => {
-    axios.get(`http://localhost:3333/toys?${category !== null ? `category=${category}`: ''}&_sort=${sortBy.type}&_order=${sortBy.order}`)
+    axios.get(`/toys?${category !== null ? `category=${category}`: ''}&_sort=${sortBy.type}&_order=${sortBy.order}`)
     .then(({data}) => {
       dispatch(setNameToys(data))
     })

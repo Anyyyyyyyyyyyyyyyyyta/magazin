@@ -44,7 +44,6 @@ import {Loading} from '../../components'
 
     const addToysToCart = (obj) => {
       dispatch(addToys(obj))
-      console.log(obj)
     }
 
     return (
@@ -64,7 +63,7 @@ import {Loading} from '../../components'
               <ToysBlock  key={obj.id} {...obj} 
                           onClickAddToys={addToysToCart} 
                           isLoading={true}
-                          addOneToys={itemsBusket[obj.id] && itemsBusket[obj.id].length}
+                          addOneToys={itemsBusket[obj.id] && itemsBusket[obj.id].items.length}
                           />):
                Array(13)
                .fill(0)
