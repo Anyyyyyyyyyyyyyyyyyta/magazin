@@ -1,8 +1,5 @@
 import React from 'react'
 import {useState, useEffect, useRef} from 'react'
-import {setSelectSortBy, setSortBy} from '../../actions'
-import {useDispatch} from 'redux'
-import PropTypes, { func } from 'prop-types'
 
 export const Sort = React.memo(
   ({items, onClickSort, activeSortType}) => {

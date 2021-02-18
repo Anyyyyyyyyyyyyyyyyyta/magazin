@@ -3,7 +3,7 @@ import {SET_VALUE_CATEGORY, SET_VALUE_SORT, SET_SORT_BY} from '../constants'
 const initialState = {
     sortBy: {
         order: 'desc',
-        type: 'popular'
+        type: 'rating'
     },
     category: null,
 

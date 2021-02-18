@@ -9,7 +9,7 @@ import {Loading} from '../../components'
  export const Home = () => {
   const arrItems = ['Мягкие','Пластмассовые','Гипс','Меховые'];
   const sortItems = [
-                      {name:'популярности', type: "popular", order: "desc"},
+                      {name:'популярности', type: 'rating', order: "desc"},
                       {name:'цена', type: 'price', order: "desc"},
                       {name:'алфавит', type: 'name', order: "asc"}
                     ];
