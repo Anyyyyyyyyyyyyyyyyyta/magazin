@@ -15,7 +15,6 @@ import {Button} from '../Button'
      }
 
      const deleteOneToy = (id)=> {
-         alert(123)
         dispatch(deleteOneThisToys(id))
      }
          
