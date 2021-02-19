@@ -27,7 +27,6 @@ import {Loading} from '../../components'
     }
    })
    const itemsBusket = useSelector(({busket})=>busket.items)
-   console.log('itemsBusket', itemsBusket)
 
    const {sortBy, category} = useSelector(({filter}) => filter)
     useEffect(() => {

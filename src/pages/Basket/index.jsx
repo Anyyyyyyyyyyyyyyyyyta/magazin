@@ -19,6 +19,10 @@ export const Basket = () => {
         }
         
     }
+
+    const orderToys =(items)=> {
+        console.log("Ваш заказ",items)
+    }
     return (
        <div>
             <div className="container container--cart">
@@ -69,7 +73,7 @@ export const Basket = () => {
 
                   <span>Вернуться назад</span>
                 </Link>
-                <div className="button pay-btn">
+                <div onClick={()=>orderToys(items)}className="button pay-btn">
                   <span>Оплатить сейчас</span>
                 </div>
               </div>

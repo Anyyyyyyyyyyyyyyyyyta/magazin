@@ -1,6 +1,4 @@
 import React from 'react'
-import {useState} from 'react'
-import PropTypes from 'prop-types'
 
 export const Categories = React.memo(({activeCategory, items, onClickItem}) => {
     //const [itemActive, setItemActive] = useState(null)

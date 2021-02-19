@@ -13,7 +13,6 @@ import {Route} from 'react-router-dom'
       <div className="content">
           <Route path='/' component={Home} exact/>
           <Route path='/basket' component={Basket} exact/>
-          <Route path='/empty-basket' component={EmptyBusket} exact/>
         </div>
     </div>
 

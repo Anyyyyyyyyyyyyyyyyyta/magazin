@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
 import className from 'classnames'
-import PropTypes from 'prop-types'
-import { Button } from '../Button/index';
 
 export const ToysBlock = ({id, name, imageUrl, price, sizes, onClickAddToys, addOneToys}) => {
 
